@@ -1,0 +1,22 @@
+{
+  "name": "discord-bot-maker",
+  "version": "1.0.0",
+  "description": "A comprehensive Discord Bot Maker with web and desktop applications",
+  "main": "desktop/main.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run web\"",
+    "server": "cd backend && npm run dev",
+    "web": "cd web && npm start",
+    "desktop": "cd desktop && npm start",
+    "build": "npm run build:web && npm run build:desktop",
+    "build:web": "cd web && npm run build",
+    "build:desktop": "cd desktop && npm run build",
+    "install:all": "npm install && cd backend && npm install && cd ../web && npm install && cd ../desktop && npm install"
+  },
+  "keywords": ["discord", "bot", "maker", "generator", "templates"],
+  "author": "Discord Bot Maker",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 

@@ -1,0 +1,25 @@
+{
+  "name": "discord-bot-maker-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Discord Bot Maker",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "discord.js": "^14.14.1",
+    "fs-extra": "^11.1.1",
+    "archiver": "^6.0.1",
+    "multer": "^1.4.5-lts.1",
+    "uuid": "^9.0.1",
+    "child_process": "^1.0.2",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+} 

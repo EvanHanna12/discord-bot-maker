@@ -1,0 +1,48 @@
+{
+  "botName": "My Awesome Bot",
+  "prefix": "!",
+  "embedColor": "#0099ff",
+  "defaultCooldown": 3,
+  "features": {
+    "moderation": {
+      "enabled": true,
+      "logChannel": "mod-logs",
+      "autoMod": {
+        "enabled": true,
+        "spamProtection": true,
+        "linkFilter": false,
+        "wordFilter": []
+      }
+    },
+    "fun": {
+      "enabled": true,
+      "games": ["8ball", "coinflip", "dice", "rps"],
+      "memes": true,
+      "jokes": true
+    },
+    "utility": {
+      "enabled": true,
+      "serverInfo": true,
+      "userInfo": true,
+      "ping": true
+    }
+  },
+  "permissions": {
+    "kick": ["KickMembers"],
+    "ban": ["BanMembers"],
+    "mute": ["ModerateMembers"],
+    "clear": ["ManageMessages"]
+  },
+  "customCommands": [
+    {
+      "name": "hello",
+      "description": "Say hello to the bot",
+      "response": "Hello! I'm {botName}, nice to meet you!"
+    },
+    {
+      "name": "info",
+      "description": "Get bot information",
+      "response": "I'm {botName}, a Discord bot created with Discord Bot Maker!"
+    }
+  ]
+} 
